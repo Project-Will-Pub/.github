@@ -1,0 +1,79 @@
+name: Report bug
+description: Report bug on this repository
+labels:
+  - "bug"
+assignees:
+  - rk0cc
+body:
+  - type: markdown
+    attributes:
+      value: Describe which kind of bug you have been encountered?
+  - type: checkboxes
+    id: is-duplicated-issue
+    attributes:
+      label: Duplicated issue
+      options:
+        - label: This issue is duplicated to other issues and still not resolved.
+          required: false
+        - label: I have been tried to follow duplicated issue's step already.
+          required: false
+  - type: input
+    id: duplicated-issues-no
+    attributes:
+      label: Duplicated issue number
+      description: Please indicate which duplicated issue is related. If not applied, you will get a simplified response which indicate to related issue without further investigation.
+      placeholder: 'Issue number (e.g.: #1, #2)'
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: '# Basic information'
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operation System
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: input
+    id: os-full
+    attributes:
+      label: Full name of Operation System
+      description: Giving fullname of the OS will reduce duration on diagnosing your applied bug, especially for Linux user (If applied).
+    validations:
+      required: false
+  - type: input
+    id: java-version
+    attributes:
+      label: Java version
+      description: Provide which Java version you used. If able, please also provides which distro of Java is currently uses.
+      placeholder: 17 (OpenJDK)
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        **Your issue will be closed immediately if Java version is lower than 17**
+
+        <hr/>
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to trigger the bug
+      description: Please list your step that how the bug be triggered. You an also upload screenshot if the bug is come from GUI related.
+      placeholder: |
+        1. Call `foo()`
+        2. (...)
+    validations:
+      required: true
+  - type: textarea
+    id: stack-trace
+    attributes:
+      label: Stack track of this the bug
+      description: You can provides the stack trace if possible.
+      render: shell
+    validations:
+      required: false
