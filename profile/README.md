@@ -10,4 +10,4 @@ GUI tools of managing your Dart project.
 
 | Repository | Official website | Alternative |
 |:-:|:-:|:-:|
-| jpubspec | [Link](https://project-will-pub.github.io/docs/api/jpubspec/1.1.0/) | [![javadoc](https://javadoc.io/badge2/xyz.rk0cc.willpub/jpubspec/javadoc.svg)](https://javadoc.io/doc/xyz.rk0cc.willpub/jpubspec) |
+| jpubspec | [Link](https://willpub.rk0cc.xyz/docs/api/jpubspec/1.1.0/) | [![javadoc](https://javadoc.io/badge2/xyz.rk0cc.willpub/jpubspec/javadoc.svg)](https://javadoc.io/doc/xyz.rk0cc.willpub/jpubspec) |
