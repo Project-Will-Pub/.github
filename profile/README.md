@@ -8,6 +8,6 @@ GUI tools of managing your Dart project.
 
 ## Documentations
 
-| Repository | Official website | Alternative |
+| Repository | Official | Alternative |
 |:-:|:-:|:-:|
 | jpubspec | [Link](https://willpub.rk0cc.xyz/docs/api/jpubspec/1.2.0/) | [![javadoc](https://javadoc.io/badge2/xyz.rk0cc.willpub/jpubspec/javadoc.svg)](https://javadoc.io/doc/xyz.rk0cc.willpub/jpubspec) |
